@@ -57,6 +57,12 @@ header label:hover{
 	cursor: pointer;
 	background: rgba(0,0,0,0.5);
 }
+.menu{
+	position: fixed;
+	width: 100%;
+	z-index: 1100;
+	background: rgba(0,0,0,0.1);
+}
 
 
 .menu ul{
@@ -67,7 +73,7 @@ header label:hover{
 	justify-content: center;
 }
 .menu li:hover{
-	background: rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0.2);
 }
 
 .menu li a {
@@ -80,6 +86,63 @@ header label:hover{
 	font-weight: 400;
 	text-decoration: none;
 }
+
+.sub-menu, .sub-menu-2{
+	width: 50%;	
+	position: absolute;
+	top: -1000%;
+	left: 25%;
+	text-align: center;
+	z-index: 1100;
+	transition: all 0.5s;
+	
+}
+
+.sub-menu{
+	background-color: rgba(255,255,255,0.6);
+}
+.sub-menu-mobile{
+	width: 100%;
+	display: none;
+	left: 0;
+	text-align: center;
+	z-index: 1100;
+	transition: all 0.5s;
+	background-color: rgba(255,255,255,0.5);
+}
+.sub-menu ul{
+		flex-direction: row;
+		display: flex;
+		font-style: bold;
+		
+	}
+
+.sub-menu li{
+	font-size: 12px;
+	font-style: bold;
+}
+.sub-menu li a {
+	display: block;
+	font-size: 12px;
+	font-style: bold;
+	font-weight: 400;
+	text-decoration: none;
+}
+.negro-s {	
+	font-size: 10px;
+	color:  #1b1b1b;	
+}
+
+.menu .sub-menu-mobile li a {
+	display: block;
+	font-size: 24px;
+	color:  #1b1b1b;
+	font-style: bold;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+
 
 
 #titulo-m{
@@ -124,8 +187,37 @@ header label:hover{
 		z-index: 1000;
 		transition: all 0.5s;
 	}
+	.sub-menu-mobile{
+		width: 100%;
+		display: hide;
+		left: 0;
+		text-align: center;
+		color:  #1b1b1b;
+		z-index: 1100;
+		transition: all 0.5s;
+		background-color: white;
+
+	}
+	.sub-menu-mobile ul {
+		
+		font-size: 10px;
+		color:  #1b1b1b;
+	
+	}
+	.sub-menu-mobile li {
+		
+		font-size: 10px;
+		color:  #1b1b1b;
+	
+	}
+
 	.menu ul{
 		flex-direction: column;
+	}
+	.sub-menu ul{
+		flex-direction: column;
+		
+		
 	}
 	.menu li a {
 	display: block;
@@ -145,20 +237,22 @@ header label:hover{
 
 }
 
-@media(max-width: 500px){
-	#titulo-m{
-		display: none;
-	}
-}
 
 .portada{
 	width: 100%;
 	height: 600px;
 	background-size: cover;
-	background-image: url(makeup2.jpg);
+	
 	background-attachment: fixed;
 	
 
+}
+#index {
+	background-image: url(makeup2.jpg);
+}
+#seccion1{
+	background-image: url(fondo.jpg);
+	height: 400px;
 }
 .portada .comprar{
 	text-align: center;
@@ -260,6 +354,15 @@ header label:hover{
     line-height: 20px;
     text-transform: uppercase;
 }
+
+.item-sec-p a{
+	text-decoration: none;
+	color: #1b1b1b;
+}
+.item-sec-p a:hover{
+	text-decoration: underline;
+	color: #1b1b1b;
+}
 .product-title {
 	margin: 0;
     font-weight: 200;
@@ -314,7 +417,7 @@ header label:hover{
   height: 400px;
   display: block;
   align-items: center;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.2);
   z-index: 1000;
   overflow: hidden;
 }
