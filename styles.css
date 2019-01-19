@@ -308,6 +308,15 @@ header label:hover{
     padding-bottom: 90px;
     text-align: center;
 }
+.product-new-sec {
+ 
+    background-color: #e7e7e7;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+}
 .product-new-black {
     padding-left: 30px;
     padding-right: 30px;
