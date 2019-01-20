@@ -88,10 +88,10 @@ header label:hover{
 }
 
 .sub-menu, .sub-menu-2{
-	width: 50%;	
+	width: 100%;	
 	position: absolute;
 	top: -1000%;
-	left: 25%;
+	left: 0%;
 	text-align: center;
 	z-index: 1100;
 	transition: all 0.5s;
@@ -254,6 +254,10 @@ header label:hover{
 	background-image: url(fondo.jpg);
 	height: 400px;
 }
+#sobre-us{
+	background-image: url(playa.jpg);
+	height: 400px;
+}
 .portada .comprar{
 	text-align: center;
 }
@@ -294,6 +298,17 @@ header label:hover{
     padding-right: 15px;
     text-align: left;
     background: #fff;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: relative;
+}
+.productos-black {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    background: #1b1b1b;
     padding-bottom: 15px;
     padding-top: 15px;
     position: relative;
@@ -500,6 +515,8 @@ header label:hover{
 	margin-right: 10%;
 
 }
+
+
 @media(max-width: 810px){
 	.content-video h1{
 	
@@ -528,6 +545,14 @@ header label:hover{
     letter-spacing: 1px;
 
 }
+
+}
+
+@media(max-width: 500px){
+	#abouth1{
+	font-size: 45px;
+	}
+	
 }
 .footer-main {
     font-weight: 600;
@@ -599,4 +624,10 @@ header label:hover{
 .footer-section ul{
 	padding-left: 0;
 	justify-content: center;
+}
+@media(max-width: 500px){
+
+	.titulo-h1{
+	font-size: 35px;
+	}
 }
